@@ -31,8 +31,8 @@ def main(argv):
     print "output array name:",outarray
 
     colorImagereadin = Image.open(inputfile)
-    # colorImageread = colorImagereadin.rotate(angle = 0)
-    colorImageread = colorImagereadin.transpose(method=Image.FLIP_TOP_BOTTOM)
+    colorImageread = colorImagereadin.rotate(angle = 0)
+    #colorImageread = colorImagereadin.transpose(method=Image.FLIP_TOP_BOTTOM)
     #(width,height) = (160,160)
     colorImageresize = colorImageread.resize((width,height))
 
